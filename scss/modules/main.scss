@@ -1,0 +1,13 @@
+@import "_variables.scss";
+@import "hero.scss";
+
+html {
+    box-sizing: border-box;
+}
+
+body {
+font-family: Nunito;
+color: $text;
+}
+
+
