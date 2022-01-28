@@ -1,0 +1,65 @@
+@import "_variables.scss";
+
+.skills {
+    color: $white;
+    background-color: $blue;
+    text-align: center;
+    font-weight: bold;
+    padding: 64px 16px 88px 16px;
+    &__header {
+        font-size: 36px;
+        line-height: 48px;
+        align-items: center;
+}
+    &-list{
+    font-style: normal;
+    font-weight: 600;
+    font-size: 16px;
+    line-height: 24px;
+    color: $gray;
+    text-align: justify;
+    list-style: none; 
+    width: 288px;
+    margin: 0 auto;
+    padding: 0;
+    &__item {
+        padding: 0 0 0 24px;
+        margin: 0 0 16px;
+        position: relative;
+        &:before {
+            position: absolute;
+            left: 0;
+            top: 8px;
+            content: '';
+            width:12px;
+            height: 9px;
+            display: block;
+            background: url(../../assets/img/green.svg);
+            .skills-list--blue & {
+                background: url(../../assets/img/blue.svg);
+            }
+        .skills-list--dot & {
+            background: $lightBlue;
+            width: 2px;
+            height: 2px;
+            border-radius: 50%;
+            top: 10px;
+            left: 5px;
+        }
+        }
+}
+}
+
+
+.skills-section {
+    margin-top: 64px;
+    &__emoji    {
+        font-size: 64px;
+        line-height: 72px;
+    }
+    &__header {
+        font-weight: bold;
+        font-size: 24px;
+        line-height: 44px;  
+    }
+} }

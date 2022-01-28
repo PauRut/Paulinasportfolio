@@ -2,7 +2,7 @@
 @import "_variables.scss";
 
 .hero {
-    padding: 64px 16px 0;
+    padding: 64px 16px 60px;
     &__contact {
         color:#fff;
         font-weight: bold;
@@ -14,7 +14,6 @@
         padding: 4px 24px;
         display: inline-block;
         align-items: center;
-        margin-bottom: 60px;
     }
 
     &__hello {
