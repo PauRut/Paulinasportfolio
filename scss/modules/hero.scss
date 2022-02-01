@@ -15,6 +15,9 @@
         display: inline-block;
         align-items: center;
     }
+    &__descripttion {
+        text-align: center;
+    }
 
     &__hello {
         display:none;

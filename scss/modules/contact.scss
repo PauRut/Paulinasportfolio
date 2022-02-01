@@ -1,1 +1,61 @@
 @import "_variables.scss";
+
+
+.contact {
+    padding: 64px 16px 88px 16px;
+    background: $gray;
+    &__description {
+        font-style: normal;
+        font-weight: 300;
+        font-size: 16px;
+        line-height: 32px;
+        text-align: center;
+    }
+    &__header {
+        font-weight: bold;
+        font-size: 36px;
+        line-height: 48px;
+        text-align: center;
+        color: $textDark;
+        margin-bottom: 32px;
+    }
+    &__links {
+        text-align: center;
+    }
+    &__mail {
+        color:#fff;
+        font-weight: bold;
+        font-size: 20px;
+        text-decoration: none;
+        line-height: 40px;
+        background-color: $lightBlue;
+        border-radius: 64px;
+        padding: 4px 24px;
+        display: inline-block;
+        align-items: center;
+    }
+
+}
+
+.socials {
+    list-style-type: none;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    &__items {
+        margin: 0 12px;
+    }
+    &__link {
+        padding: 0;
+        height: 48px;
+        width: 48px;
+        background-color: $white;
+        border-radius: 50%;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        box-shadow: 0px 4px 8px rgba(16, 112, 202, 0.15);
+        margin: 56px 0 64px 0;
+
+    }
+}

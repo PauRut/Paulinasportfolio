@@ -13,6 +13,9 @@
   display: inline-block;
   align-items: center;
 }
+.hero__descripttion {
+  text-align: center;
+}
 .hero__hello {
   display: none;
 }
