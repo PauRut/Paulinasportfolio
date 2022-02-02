@@ -5,11 +5,28 @@
   font-weight: bold;
   padding: 64px 16px 88px 16px;
 }
-.skills__header {
+@media (min-width: 960px) {
+  .skills__columns {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    -moz-column-gap: 24px;
+         column-gap: 24px;
+    max-width: 1184px;
+    margin: 0 auto;
+  }
+}
+.skills__columns__header {
   font-size: 36px;
   line-height: 48px;
   align-items: center;
 }
+@media (min-width: 960px) {
+  .skills__columns__header {
+    font-size: 48px;
+    line-height: 56px;
+  }
+}
+
 .skills-list {
   font-style: normal;
   font-weight: 600;

@@ -3,10 +3,14 @@
 
 .hero {
     padding: 64px 16px 60px;
-    @media (min-width: $tablet) {
-        max-width: 760px;
+        @media (min-width: $tablet) {
+        max-width: 768px;
         margin: 0 auto;
-    }
+        }
+        @media (min-width: $desktop) {
+        max-width: 100%;
+        }
+   
     &__bubble {
         position: absolute;
         left: calc(50% + 90px);
@@ -29,8 +33,28 @@
     }
     &__description {
         text-align: center;
+        @media (min-width: $desktop) {
+            max-width: 790px;
+            margin: 0 auto;
+            position: relative;
+            &::before, &::after  {
+                content: "";
+                display: block;
+                width: 83.23px;
+                height: 254.88px;
+                position: absolute;
+                top: -50px;    
+            }
+            &::before {
+                right: 100%;
+                background: url(/assets/img/{.svg);
+            }
+            &::after {
+                left: 100%;
+                background: url(/assets/img/}.svg);
+            }
+        }
     }
-
     &__hello {
         display:none;
         @media (min-width: $desktop) {
@@ -53,7 +77,7 @@
                 top: 100%;
                 left: 32px;
                 display:block;
-                background: url('/assets/img/Speech.svg');
+                background: url('/assets/img/Speech_cloud.svg');
                 height:24px;
                 width:24px;
             }
@@ -69,7 +93,6 @@
             height: 178px;
             width: 178px;
             border: 24px solid #F6F9FD;
-
         }
     }
     &__image-container {
@@ -83,6 +106,12 @@
         font-weight: bold;
         text-decoration: none;
     }
+    &__special {
+        color: $lightBlue;
+        font-weight: bold;
+        white-space: nowrap;
+
+    }
     &__header {
         font-size: 26px;
         line-height: 32px;
@@ -93,7 +122,6 @@
         font-weight: bold;
         font-size: 32px;
         line-height: 40px;
-
         }
     }
     &__paragraph {
@@ -108,10 +136,7 @@
         @media (min-width: $desktop) {
             font-size: 20px;
             line-height: 40px;
-}
-
-
+        }
     }
 }
 
-   
