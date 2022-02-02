@@ -32,6 +32,12 @@
   display: inline-block;
   align-items: center;
 }
+@media (max-width: 320px) {
+  .contact__mail {
+    font-size: 16px;
+    padding: 2px 20px;
+  }
+}
 
 .socials {
   list-style-type: none;

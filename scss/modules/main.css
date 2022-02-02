@@ -1,6 +1,17 @@
 .hero {
   padding: 64px 16px 60px;
 }
+@media (min-width: 768px) {
+  .hero {
+    max-width: 760px;
+    margin: 0 auto;
+  }
+}
+.hero__bubble {
+  position: absolute;
+  left: calc(50% + 90px);
+  top: -26px;
+}
 .hero__contact {
   color: #fff;
   font-weight: bold;
@@ -11,13 +22,45 @@
   border-radius: 64px;
   padding: 4px 24px;
   display: inline-block;
-  align-items: center;
 }
-.hero__descripttion {
+@media (max-width: 320px) {
+  .hero__contact {
+    font-size: 16px;
+    padding: 2px 20px;
+  }
+}
+.hero__description {
   text-align: center;
 }
 .hero__hello {
   display: none;
+}
+@media (min-width: 960px) {
+  .hero__hello {
+    display: block;
+    background: #1070CA;
+    padding: 16px 19px;
+    color: #fff;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 32px;
+    line-height: 40px;
+    border-radius: 16px;
+    display: inline-block;
+    align-items: center;
+    text-align: center;
+    position: relative;
+  }
+  .hero__hello:after {
+    content: "";
+    position: absolute;
+    top: 100%;
+    left: 32px;
+    display: block;
+    background: url("/assets/img/Speech.svg");
+    height: 24px;
+    width: 24px;
+  }
 }
 .hero__image {
   box-sizing: content-box;
@@ -26,10 +69,18 @@
   border-radius: 50%;
   border: 16px solid #F6F9FD;
 }
+@media (min-width: 960px) {
+  .hero__image {
+    height: 178px;
+    width: 178px;
+    border: 24px solid #F6F9FD;
+  }
+}
 .hero__image-container {
   display: flex;
   align-items: center;
   justify-content: center;
+  position: relative;
 }
 .hero__link {
   color: #4DA8FF;
@@ -43,6 +94,13 @@
   text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
   color: #234361;
 }
+@media (min-width: 960px) {
+  .hero__header {
+    font-weight: bold;
+    font-size: 32px;
+    line-height: 40px;
+  }
+}
 .hero__paragraph {
   font-weight: 300;
   font-size: 16px;
@@ -51,6 +109,13 @@
   text-align: center;
   color: #425A70;
   margin-bottom: 48px;
+  font-weight: 300;
+}
+@media (min-width: 960px) {
+  .hero__paragraph {
+    font-size: 20px;
+    line-height: 40px;
+  }
 }
 
 .skills {
@@ -189,6 +254,18 @@
   align-items: center;
 }
 
+.projects-grid {
+  display: grid;
+  -moz-column-gap: 24px;
+       column-gap: 24px;
+  row-gap: 24px;
+}
+@media (min-width: 768px) {
+  .projects-grid {
+    grid-template-columns: 1fr 1fr;
+  }
+}
+
 .contact {
   padding: 64px 16px 88px 16px;
   background: #DBEAF7;
@@ -222,6 +299,12 @@
   padding: 4px 24px;
   display: inline-block;
   align-items: center;
+}
+@media (max-width: 320px) {
+  .contact__mail {
+    font-size: 16px;
+    padding: 2px 20px;
+  }
 }
 
 .socials {

@@ -69,4 +69,16 @@
   background: #1E1E1E;
   border-radius: 16px 16px 0px 0px;
   align-items: center;
+}
+
+.projects-grid {
+  display: grid;
+  -moz-column-gap: 24px;
+       column-gap: 24px;
+  row-gap: 24px;
+}
+@media (min-width: 768px) {
+  .projects-grid {
+    grid-template-columns: 1fr 1fr;
+  }
 }/*# sourceMappingURL=projects.css.map */
