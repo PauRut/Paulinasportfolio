@@ -53,11 +53,11 @@
   }
   .hero__description::before {
     right: 100%;
-    background: url(/assets/img/{.svg);
+    background: url(/assets/img/left.svg);
   }
   .hero__description::after {
     left: 100%;
-    background: url(/assets/img/}.svg);
+    background: url(/assets/img/right.svg);
   }
 }
 .hero__hello {
@@ -85,7 +85,7 @@
     top: 100%;
     left: 32px;
     display: block;
-    background: url("/assets/img/Speech_cloud.svg");
+    background: url("/assets/img/Speech.svg");
     height: 24px;
     width: 24px;
   }
