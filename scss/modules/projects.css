@@ -65,6 +65,7 @@
   .project {
     font-size: 16px;
     line-height: 24px;
+    margin: 0;
   }
 }
 .project__circle {
@@ -78,10 +79,11 @@
 }
 .project__content {
   padding: 24px 16px;
+  max-height: 284px;
 }
 @media (min-width: 960px) {
   .project__content {
-    padding: 24px 48px 82px;
+    padding: 18px 48px 58px;
   }
 }
 .project__grid {

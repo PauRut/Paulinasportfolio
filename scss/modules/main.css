@@ -1,3 +1,32 @@
+@-webkit-keyframes wave {
+  0% {
+    transform: rotate(-15deg);
+  }
+  50% {
+    transform: rotate(15deg);
+  }
+  100% {
+    transform: rotate(-15deg);
+  }
+}
+@keyframes wave {
+  0% {
+    transform: rotate(-15deg);
+  }
+  50% {
+    transform: rotate(15deg);
+  }
+  100% {
+    transform: rotate(-15deg);
+  }
+}
+.hand {
+  display: inline-block;
+  -webkit-animation: wave 2s ease-in-out infinite;
+          animation: wave 2s ease-in-out infinite;
+  transform-origin: bottom center;
+}
+
 .hero {
   padding: 64px 16px 60px;
 }
@@ -298,6 +327,7 @@
   .project {
     font-size: 16px;
     line-height: 24px;
+    margin: 0;
   }
 }
 .project__circle {
@@ -311,10 +341,11 @@
 }
 .project__content {
   padding: 24px 16px;
+  max-height: 284px;
 }
 @media (min-width: 960px) {
   .project__content {
-    padding: 24px 48px 82px;
+    padding: 18px 48px 58px;
   }
 }
 .project__grid {
@@ -367,8 +398,13 @@
 }
 
 .contact {
-  padding: 64px 16px 88px 16px;
+  padding: 80px 16px 88px 16px;
   background: #DBEAF7;
+}
+@media (min-width: 960px) {
+  .contact {
+    padding: 80px 0 176px;
+  }
 }
 .contact__description {
   font-style: normal;
@@ -376,6 +412,12 @@
   font-size: 16px;
   line-height: 32px;
   text-align: center;
+}
+@media (min-width: 960px) {
+  .contact__description {
+    font-size: 20px;
+    line-height: 40px;
+  }
 }
 .contact__header {
   font-weight: bold;
@@ -385,8 +427,23 @@
   color: #234361;
   margin-bottom: 32px;
 }
+@media (min-width: 960px) {
+  .contact__header {
+    font-size: 48px;
+    line-height: 56px;
+  }
+}
 .contact__links {
   text-align: center;
+}
+@media (min-width: 960px) {
+  .contact__links {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    max-width: 580px;
+    margin: 128px auto 0;
+  }
 }
 .contact__mail {
   color: #fff;
@@ -413,6 +470,11 @@
   display: flex;
   justify-content: center;
 }
+@media (min-width: 960px) {
+  .socials {
+    margin: 0;
+  }
+}
 .socials__items {
   margin: 0 12px;
 }
@@ -428,12 +490,22 @@
   box-shadow: 0px 4px 8px rgba(16, 112, 202, 0.15);
   margin: 56px 0 64px 0;
 }
+@media (min-width: 960px) {
+  .socials__link {
+    margin: 0;
+  }
+}
+.socials__logo {
+  color: #4DA8FF;
+}
 
 html {
   box-sizing: border-box;
+  scroll-behavior: smooth;
 }
 
 body {
   font-family: Nunito;
   color: #425A70;
+  margin: 0;
 }/*# sourceMappingURL=main.css.map */

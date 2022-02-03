@@ -1,0 +1,28 @@
+@-webkit-keyframes wave {
+  0% {
+    transform: rotate(-15deg);
+  }
+  50% {
+    transform: rotate(15deg);
+  }
+  100% {
+    transform: rotate(-15deg);
+  }
+}
+@keyframes wave {
+  0% {
+    transform: rotate(-15deg);
+  }
+  50% {
+    transform: rotate(15deg);
+  }
+  100% {
+    transform: rotate(-15deg);
+  }
+}
+.hand {
+  display: inline-block;
+  -webkit-animation: wave 2s ease-in-out infinite;
+          animation: wave 2s ease-in-out infinite;
+  transform-origin: bottom center;
+}/*# sourceMappingURL=hand.css.map */
