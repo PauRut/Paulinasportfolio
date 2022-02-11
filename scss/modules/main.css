@@ -108,7 +108,7 @@
     text-align: center;
     position: relative;
   }
-  .hero__hello:after {
+  .hero__hello::after {
     content: "";
     position: absolute;
     top: 100%;
@@ -143,6 +143,13 @@
   color: #4DA8FF;
   font-weight: bold;
   text-decoration: none;
+}
+.hero__link:hover {
+  background-color: #4DA8FF;
+  color: #fff;
+  border-radius: 6px;
+  transition: all 500ms ease-in-out;
+  padding: 2px;
 }
 .hero__special {
   color: #4DA8FF;
@@ -451,7 +458,7 @@
   font-size: 20px;
   text-decoration: none;
   line-height: 40px;
-  background-color: #4DA8FF;
+  background-color: #111;
   border-radius: 64px;
   padding: 4px 24px;
   display: inline-block;

@@ -79,7 +79,7 @@
     text-align: center;
     position: relative;
   }
-  .hero__hello:after {
+  .hero__hello::after {
     content: "";
     position: absolute;
     top: 100%;
@@ -114,6 +114,13 @@
   color: #4DA8FF;
   font-weight: bold;
   text-decoration: none;
+}
+.hero__link:hover {
+  background-color: #4DA8FF;
+  color: #fff;
+  border-radius: 6px;
+  transition: all 500ms ease-in-out;
+  padding: 2px;
 }
 .hero__special {
   color: #4DA8FF;

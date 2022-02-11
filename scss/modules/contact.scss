@@ -29,7 +29,6 @@
         @media (min-width: $desktop) {
             font-size: 48px;
             line-height: 56px;
-            // margin-bottom: 40px;
         }
     }
     &__links {
@@ -48,7 +47,7 @@
         font-size: 20px;
         text-decoration: none;
         line-height: 40px;
-        background-color: $lightBlue;
+        background-color: #111;
         border-radius: 64px;
         padding: 4px 24px;
         display: inline-block;

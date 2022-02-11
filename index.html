@@ -20,20 +20,26 @@
     <link href="https://fonts.googleapis.com/css2?family=Nunito:wght@300;600;700&family=Roboto+Mono:wght@400;700&display=swap" rel="stylesheet">
 <body>
     <main>
+       
         <section class="hero">
             <div class="hero__image-container">
                 <img class="hero__image" src="assets/img/Paulina.jpg" alt="A picture of Paulina">
                <span class="hero__bubble"><span class="hero__hello"> Hey there! <span class="hand">👋</span></span></span> 
             </div>
             <div  class="hero__description">
-                <h1 class="hero__header">My name is Paulina and I’m an aspiring <span class="hero__special">Frontend developer </span>and a lover of friluftsliv. </h1>
-            <p class="hero__paragraph">You might be interested in checking the list of my <a class="hero__link" href="#skills">skills</a>. Don’t forget to  have a glimpse at 
+                <h1 class="hero__header">My name is Paulina and I’m an aspiring <span class="hero__special">Frontend developer </span>
+                    and a lover of friluftsliv. </h1>
+            <p class="hero__paragraph">You might be interested in checking the list of my 
+                <a class="hero__link" href="#skills">skills</a>. Don’t forget to  have a glimpse at 
                 <a  class="hero__link" href="#projects">my projects</a>. 
-                Currently I’m looking for a new challenges so if you have one - <a class="hero__link" href="#contact">contact me </a> 😊</p>
-            <a class="hero__contact" href="mailto:polciaalicious@gmail.com">polciaalicious@gmial.com</a>
+                Currently I’m looking for a new challenges so if you have one - 
+                <a class="hero__link" href="#contact">contact me</a> 😊</p>
+            <a class="hero__contact" href="mailto:polciaalicious@gmail.com">polciaalicious@gmail.com</a>
         </div>
     
         </section>
+
+       
 
 <section class="skills" id="skills">
 <h2 class="skills__header">My skills</h2>
@@ -45,12 +51,11 @@
 
 <ul class="skills-list">
     <li class="skills-list__item">Semantic HTML5</li>
-    <li class="skills-list__item">Flexbox</li>
-    <li class="skills-list__item">Markdown</li>
-    <li class="skills-list__item">Figma</li>
-    <li class="skills-list__item">CSS grid </li>
-    <li class="skills-list__item">JS: DOM manipulations</li>
+    <li class="skills-list__item">CSS grid</li>
     <li class="skills-list__item">SASS</li>
+    <li class="skills-list__item">Flexbox</li>
+    <li class="skills-list__item">Figma</li>
+    <li class="skills-list__item">JS: DOM manipulations</li>
 </ul>
 </article>
 
@@ -59,13 +64,12 @@
 <h3 class="skills-section__header">Know something about</h3>
 <ul class="skills-list skills-list--blue">
     <li class="skills-list__item">JavaScript ES6 + features</li>
+    <li class="skills-list__item">React JS </li>
     <li class="skills-list__item">CSS animations</li>
     <li class="skills-list__item">Working with API</li>
-    <li class="skills-list__item">NPM Scripts</li>
-    <li class="skills-list__item">React JS </li>
     <li class="skills-list__item">Git</li>
+    <li class="skills-list__item">DOM APIs</li>
     <li class="skills-list__item">Wordpress</li>
-    <li class="skills-list__item">Accessibility</li>
 </ul>
 </article>
 
@@ -74,9 +78,12 @@
 <h3 class="skills-section__header">Want to learn</h3>
 <ul class="skills-list skills-list--dot">
     <li class="skills-list__item">Node JS</li>
-    <li class="skills-list__item">Typecript</li>
-    <li class="skills-list__item">Gatsby</li>
+    <li class="skills-list__item">TypeScript</li>
     <li class="skills-list__item">React Native</li>
+    <li class="skills-list__item">Jasmine</li>
+    <li class="skills-list__item">Mocha</li>
+    <li class="skills-list__item">Gatsby</li>
+
 </ul>
 </article>
 </div>
@@ -86,9 +93,35 @@
 
 <section class="projects" id="projects">
     <h2 class="projects__header">Recent projects</h2>
-    <p class="projects__description">I started my frontend developer path in 2019. Since then, I’ve built some projects. Here’s the list of the things I’ve done so far.</p>
+    <p class="projects__description">I started my frontend developer path in 2019. Since then, I’ve built some projects.
+         Here’s the list of the things I’ve done so far. These projects are constantly improved.</p>
 
 <div class="projects-grid projects-grid--js">
+    <article class="project">
+        <div class="project__window">
+        <span class="project__circle"></span>
+        <span class="project__circle"></span>
+        <span class="project__circle"></span></div>
+    <div class="project__content">
+    <img class="project__logo" src="assets/img/Github Icon.svg" alt="logo of Github">
+    
+        <h3 class="project__grid project__title"><span class="project__label">project: </span>
+            <span class="project__title-bold">Reactflix</span></h3>
+    <p class="project__grid project__grid--description"> <span class="project__label">description:</span> 
+        <span>Copy of Netflix made in ReactJS</span>
+    </p>
+    <p class="project__grid">
+       <span class="project__label">demo:</span>
+    <span>
+    &lt;<a class="project__link" href="#" title="podlaski git - demo">see here</a>&gt;</span>   
+    </p>
+    <p class="project__grid">
+    <span class="project__label">github:</span>
+    <span>
+    &lt;<a class="project__link" href="https://github.com/PauRut/Reactflix" title="podlaski git - code">source_code</a>&gt;</span>   
+    </p>
+    </div>
+    </article>
    
 <article class="project">
     <div class="project__window">
@@ -114,30 +147,7 @@
 </p>
 </div>
 </article>
-<article class="project">
-    <div class="project__window">
-    <span class="project__circle"></span>
-    <span class="project__circle"></span>
-    <span class="project__circle"></span></div>
-<div class="project__content">
-<img class="project__logo" src="assets/img/Github Icon.svg" alt="logo of Github">
 
-    <h3 class="project__grid project__title"><span class="project__label">project: </span><span class="project__title-bold">podlaski git</span></h3>
-<p class="project__grid project__grid--description"> <span class="project__label">description:</span> 
-    <span>podlaskie aliasy dla gitowych komend</span>
-</p>
-<p class="project__grid">
-   <span class="project__label">demo:</span>
-<span>
-&lt;<a class="project__link" href="#" title="podlaski git - demo">see here</a>&gt;</span>   
-</p>
-<p class="project__grid">
-<span class="project__label">github:</span>
-<span>
-&lt;<a class="project__link" href="#" title="podlaski git - code">source_code</a>&gt;</span>   
-</p>
-</div>
-</article>
 </div>
 </section>
 
@@ -173,10 +183,11 @@
                     alt="Paulina's LinkedIn"> </a>
                 </li>
 </ul>
-    <a class="contact__mail" href="mailto:polciaalicious@gmail.com">polciaalicious@gmial.com</a>
+    <a class="contact__mail" href="mailto:polciaalicious@gmail.com">polciaalicious@gmail.com</a>
 </div>
 
 </section>
+
 
     </main>
 </body>

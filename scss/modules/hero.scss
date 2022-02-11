@@ -71,7 +71,7 @@
             align-items: center;
             text-align: center;
             position: relative;
-            &:after {
+            &::after {
                 content: "";
                 position: absolute;
                 top: 100%;
@@ -105,7 +105,16 @@
         color: $lightBlue;
         font-weight: bold;
         text-decoration: none;
-    }
+        &:hover {
+            background-color: $lightBlue;
+            color: $white;
+            border-radius: 6px;
+            transition: all 500ms ease-in-out;
+            padding: 2px;
+            }
+        }
+
+
     &__special {
         color: $lightBlue;
         font-weight: bold;
@@ -139,4 +148,3 @@
         }
     }
 }
-
