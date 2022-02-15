@@ -47,11 +47,11 @@
             }
             &::before {
                 right: 100%;
-                background: url(/assets/img/left.svg);
+                background: url(assets/img/left.svg);
             }
             &::after {
                 left: 100%;
-                background: url(/assets/img/right.svg);
+                background: url(assets/img/right.svg);
             }
         }
     }
@@ -77,7 +77,7 @@
                 top: 100%;
                 left: 32px;
                 display:block;
-                background: url('/assets/img/Speech.svg');
+                background: url('assets/img/Speech.svg');
                 height:24px;
                 width:24px;
             }
